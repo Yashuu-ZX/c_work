@@ -1,16 +1,21 @@
 #include <stdio.h>
 int main()
 {
-    int a = 100;
-    int check;
-    for (int i =2; i<= a;i++){
-        check= 1;
-        for(int h =2 ;h<i;h++){
-            if ((i%h)==0){
-                check=0;
+    int a=20;
+    // printf("ENTER NUMBER FROM WHERE YOU WANT PRIME NUMBERS --> ");
+    // scanf("%d",&a);
+    for (int i = 2; i <= a; i++)
+    {
+        int temp= 1;
+        for(int j = 2 ;j < i;j++)
+        {
+            if ((i%j)==0)
+            {
+                temp=0;
             }
         }
-        if (check==1){
+        if (temp==1)
+        {
             printf("%d\n",i);
         }
     }
